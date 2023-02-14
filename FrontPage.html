@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="./styleswitcher.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("Dsc1QQZxonHcBotSN");
+})();
+</script>
     <title>Jaffar Shaikh</title>
 </head>
 <body>
@@ -19,35 +27,35 @@
     <span></span>
 </div>
    <ul class="nav">
-   <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-   <li><a href="#about" ><i class="fa fa-user"></i>About</a></li>
-   <li><a href="#service" ><i class="fa fa-list"></i>Service</a></li>
-   <li><a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
-   <li><a href="#contact" ><i class="fa fa-comments"></i>Contact</a></li>
+   <li><a><i class="fa fa-home"></i>Home</a></li>
+   <li><a><i class="fa fa-user"></i>About</a></li>
+   <li><a><i class="fa fa-list"></i>Service</a></li>
+   <li><a><i class="fa fa-briefcase"></i>Portfolio</a></li>
+   <li><a><i class="fa fa-comments"></i>Contact</a></li>
 
    </ul>
 
      </div>
    <div class="main-content">
-    <section class="home "id="home">
+    <section class="home "id="home" data-point="0">
 <div class="container">
     <div class="row">
         <div class="home-info padd-15">
             <h3 class="hello">Hello,my name is <span class="name">Jaffar Shaikh</span></h3>
               <h3 class="my-profession">I'm a <span class="typing">Frontend Developer</span></h3>
               <p>
-                 Working with HTML5, CSS3, JavaScript, and React JS. Worked as a front-end developer and involved in the analysis of requirements, the design and the integration of the Corporate website.
-                I am a quick learner with the ability to grasp new responsibilities very quickly. Not only does this make me more productive at my work but also enhances my ability to ideate and show creativity as and when required.
+                 Working with HTML5, CSS3, JavaScript, and React JS.
+                I am a civil engineer turned front-end developer with 8 months of experience in the IT industry. My background in engineering combined with my passion for developing user-friendly and visually appealing web applications gives me a unique perspective in the field. I am dedicated to continuous learning and growth, and eager to bring my skills and knowledge to this dynamic industry. 
               </p>
-              <a href="#contact" class="btn hire-me">More About Me</a>
+              <a href="#contact" class="btn hire-me"id="aboutme">More About Me</a>
         </div>
         <div class="home-img padd-15">
-            <img src="WhatsApp Image 2021-08-12 at 10.41.45 PM.jpeg" alt="">
+            <img src="./jaffarpic-removebg-preview.png" alt="">
         </div>
     </div>
 </div>
     </section>
- <section class="about section "id="about">
+ <section class="about section "id="about"data-point="440">
     <div class="container">
         <div class="row">
             <div class="section-title">
@@ -74,12 +82,12 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                             <div class="info-item padd-15">
                                 <p>Age:<span>24</span></p>
                             </div>
-                           
                             <div class="info-item padd-15">
-                                <p>Github:<span>https://github.com/shaikhjaffar</span></p>
+                                <p>Github:<a href="https://github.com/shaikhjaffar" target="_blank">Shaikh Jaffar</a></p>
                             </div>
                             <div class="info-item padd-15">
-                                <p>E-mail:<span>jaffarshaikh013@gmail.com</span></p>
+                                <p>E-mail:<span><a href="mailto:jaffarshaikh013@gmail.com">jaffarshaikh013@gmail.com</a>
+                                </span></p>
                             </div>
                             <div class="info-item padd-15">
                                 <p>Degree:<span>Civil Engineer</span></p>
@@ -90,7 +98,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                         </div>
                         <div class="row">
                             <div class="buttons padd-15">
-                                <a href="" class="btn">Download Cv</a>
+                                <a href="./Resume (2).pdf" class="btn" download>Download Cv</a>
                                 <a href=" " class="btn hire-me">Hire Me!</a>
                             </div>
                         </div>
@@ -132,18 +140,17 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                                     <div class="skill-percent">70%</div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="education padd-15">
+                    <!-- <div class="education padd-15">
                         <h3 class="title">Education</h3>
-                        <div class="row">
-                            <div class="timeline-box padd-15">
-                                <div class="timeline shadow-dark">
+                        <div class="row"> -->
+                            <!-- <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark"> -->
                                  <!---Timeline Item-->
-                                  <div class="timeline-item">
+                                  <!-- <div class="timeline-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-date">
                                         <i class="fa fa-calendar"> </i>2016-2020
@@ -157,7 +164,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                                     </h3>
                                     <h4 class="timeline-tittle">Civil Enginerring</h4>
                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam, laboriosam tempora eius minima deleniti laudantium fugiat laborum sed minus quaerat a asperiores quia corporis.</p>
-                                  </div>
+                                  </div> -->
                                   <!-- <div class="timeline-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-date">
@@ -166,14 +173,12 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                                     <h4 class="timeline-tittle">Civil Enginerring</h4>
                                     <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam, laboriosam tempora eius minima deleniti laudantium fugiat laborum sed minus quaerat a asperiores quia corporis.</p>
                                   </div> -->
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <!-- </div>
+                            </div> -->
+                        <!-- </div>
+                    </div> -->
                     <div class="experience padd-15">
-                        <h3 class="title">Experienec</h3>
+                        <h3 class="title">Experience</h3>
                         <div class="row">
                             <div class="timeline-box padd-15">
                                 <div class="timeline shadow-dark">
@@ -240,7 +245,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
     </div>
  </section>
 <!--------------service section start-->
-<section class="service section "id="service">
+<section class="service section "id="service" data-point="1977">
     <div class="container">
         <div class="row">
             <div class="section-title padd-15">
@@ -310,7 +315,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
 </section>
   <!---------------service section end-->
   <!------portfolio start-->
-     <section class="portfolio section "id="portfolio">
+     <section class="portfolio section "id="portfolio"data-point="2915">
         <div class="container">
             <div class="row">
                 <div class="section-title padd-15">
@@ -327,7 +332,8 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                 <div class="portfolio-item padd-15">
                <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img">
-                    <img src="./WhatsApp Image 2021-08-12 at 10.41.45 PM.jpeg" alt="">
+                    <img src="./Screenshot (81).png" alt="">
+                    <!-- <h3 class="knowmoreabou">Know more about it!!!</h3> -->
                 </div>
                </div>
                 </div>
@@ -337,6 +343,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
                     <div class="portfolio-item-inner shadow-dark">
                      <div class="portfolio-img">
                          <img src="./WhatsApp Image 2021-08-12 at 10.41.45 PM.jpeg" alt="">
+                        
                      </div>
                     </div>
                      </div>
@@ -375,7 +382,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
   <!------portfolio End-->
 
   <!-------------contact section start-->
-<section class="contact section" id="contact">
+<section class="contact section" id="contact" data-point="3319">
     <div class="container">
         <div class="row">
             <div class="section-title padd-15">
@@ -406,7 +413,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
             <div class="contact-info-item padd-15">
                 <div class="icon"><i class="fa fa-envelope"></i></div>
                 <h4>Email</h4>
-                <p>jaffarshaikh013@gmail.com</p>
+                <p><a href="mailto:jaffarshaikh013@gmail.com">jaffarshaikh013@gmail.com</a></p>
             </div>
                         <!---contact info item end-->
                          <!---contact info item start-->
@@ -425,27 +432,27 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
             <div class="contact-form padd-15">
                 <div class="row">
                     <div class="form-item col-6 padd-15">
-                        <div class="form-group"><input type="text" class="form-control" placeholder="Name">
+                        <div class="form-group"><input type="text" id="name" class="form-control" placeholder="Name">
                         </div>
                     </div>
                     <div class="form-item col-6 padd-15">
-                        <div class="form-group"><input type="email" class="form-control" placeholder="Email">
+                        <div class="form-group"><input type="email" id="email" class="form-control" placeholder="Email">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-item col-12 padd-15">
-                        <div class="form-group"><input type="text" class="form-control" placeholder="Subject"></div>
+                        <div class="form-group"><input type="text" class="form-control" id="subject" placeholder="Subject"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-item col-12 padd-15">
-                        <textarea name="" class="form-control" placeholder="Message"></textarea>
+                        <textarea name="" class="form-control" id="message" placeholder="Message"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-item col-12 padd-15">
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" onclick="submit()" class="btn">Send Message</button>
                     </div>
                 </div>
             </div>
@@ -461,7 +468,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
    </div>
  </div>
 
- <div class="style-switcher">
+ <!-- <div class="style-switcher">
     <div class="style-switcher-toggler s-icon">
         <i class="fa fa-cog fa-spin"></i>
     </div>
@@ -476,7 +483,7 @@ I am a quick learner with the ability to grasp new responsibilities very quickly
         <span class="color-4" onclick="setActiveStyle('color-4')"></span>
         <span class="color-5" onclick="setActiveStyle('color-5')"></span>
     </div>
- </div>
+ </div> -->
     <script src="Main.js"></script>
     <script src="styleswitcher.js"></script>
 </body>
